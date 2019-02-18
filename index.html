@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS animation-timing-function comparison</title>
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <body bgcolor=#1f1f1f>
+  
+<style>
+  
+  .blocks {
+    position: fixed;  
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    animation-name: race;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  #block1 { 
+    background: #dcdccc;
+    top:5%;
+    animation-timing-function: linear;
+  }
+  #block2 { 
+    background: #f0dfaf;
+    top:20%;
+    animation-timing-function: ease;
+  }
+  #block3 { 
+    background: #ecbcbc;
+    top:35%;
+    animation-timing-function: ease-in;
+  }
+  #block4 { 
+    background: #ffcfaf;
+    top:50%;
+    animation-timing-function: ease-out;
+  }
+  #block5 { 
+    background: #bca3a3;
+    top:65%;
+    animation-timing-function: ease-in-out;
+  }
+  
+
+@keyframes race {
+  0% {
+    left: 0px;
+  } 
+  70% {
+    left: 1000px;
+  }
+  100%
+} 
+
+</style>
+
+<div class="blocks" id="block1">linear</div>
+<div class="blocks" id="block2">ease</div>
+<div class="blocks" id="block3">ease-in</div>
+<div class="blocks" id="block4">ease-out</div>
+<div class="blocks" id="block5">ease-in-out</div>
+  
+  
+
+</body>
+
+</html>
